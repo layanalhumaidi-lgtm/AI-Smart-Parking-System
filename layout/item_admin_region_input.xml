@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="12dp"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl">
+
+    <!-- صندوق حرف المنطقة (A, B, C...) -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#8AB682"
+        android:layout_marginEnd="12dp">
+
+        <TextView
+            android:id="@+id/tvRegionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="A"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- حقل عدد المواقف -->
+    <EditText
+        android:id="@+id/etRegionSlots"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:background="@drawable/input_background"
+        android:hint="عدد المواقف"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:inputType="number"
+        android:layout_marginEnd="12dp"/>
+
+    <!-- حقل عدد مواقف ذوي الاحتياجات -->
+    <EditText
+        android:id="@+id/etRegionSpecial"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:background="@drawable/input_background"
+        android:hint="ذوي الاحتياجات"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:inputType="number"/>
+
+</LinearLayout>
